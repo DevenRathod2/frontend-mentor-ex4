@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --voilet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("./assets/bg-desktop.svg");
+  background-color: var(--voilet);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-top: 40px;
+
+}
+
+nav {
+    margin-top: 60px;
+}
+
+nav img {
+    width: auto;
+    height: 45px;
+    margin-left: 50px;
+}
+
+.contain-image img {
+    height: 550px;
+    width: auto;
+}
+
+.contain-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contain-info h1 {
+    text-align: start;
+    margin-left: 50px;
+    margin-top: -130px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contain-info p {
+    text-align: start;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.ctn-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+button {
+    background-color: white;
+    color: var(--voilet);
+    width: 220px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--soft-magenta);
+    cursor: pointer;
+}
+
+.social-icons {
+    padding-right: 90px;
+    margin-top: -25px;
+
+}
+.icons {
+    width: 35px;
+    height: 35px;
+    border: white solid;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    padding: 3px;
+    cursor: pointer;
+    float: right;
+    
+}
+
+.icons:hover {
+    color: var(--soft-magenta);
+    cursor: pointer;
+    border: var(--soft-magenta) solid;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--soft-magenta);
+}
+
+
+
+
+/* Moblile Responsive */
+
+@media only screen and (max-width: 600px) {
+    body {
+      background: url("");
+      background-color: var(--voilet);
+      
+    }
+
+    header {
+        background: url("./assets/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        margin-top: -60px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-top: -320px;    
+    }
+
+    nav img {
+        width: auto;
+        height: 40px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .contain-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contain-image img {
+        height: 220px;
+        width: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .contain-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+
+    }
+
+    .contain-info h1 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+
+    .contain-info p {
+        font-size: .9rem;
+        text-align: center;
+        margin-top: 25px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        align-items: center;
+    }
+
+    button:hover {
+        color: white;
+        background-color: var(--soft-magenta);
+        cursor: pointer;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .icons {
+        width: 35px;
+        height: 35px;
+        border: white solid;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px;
+        padding: 3px;
+        cursor: pointer;
+
+    }
+
+    .icons:hover {
+        color: var(--soft-magenta);
+        cursor: pointer;
+        border: var(--soft-magenta) solid;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--soft-magenta);
+    }
+
+}
